@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  width: 450px;
+  padding: 20px;
+  border: 2px dotted crimson;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 48px;
+}
+.description {
+  text-transform: uppercase;
+  color: #d1d1d1;
+  margin-bottom: 20px;
+}
+.descriptionFull {
+  margin-bottom: 32px;
+}
+.purchaseInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.purchaseInfo::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: #d1d1d1;
+}
+
+button {
+  border: 0;
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.price {
+  font-size: 48px;
+}
